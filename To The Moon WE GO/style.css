@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #10101a;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+.gradient-text {
+    background-color: #00DBDE;
+    background-image: linear-gradient(45deg, #00DBDE 10%, #FC00FF 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: animate-gradient 5s ease-in-out infinite;
+    }
+
+    @keyframes animate-gradient {
+    0% {
+        background-position: -100% center;
+    }
+    100% {
+        background-position: 100% center;
+    }
+  }
+
+  header {
+    background-color: #10101a;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .frontpage {
+    position: relative;
+    top: 130px;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    padding: 10px;
+  }
+
+  .name {
+    margin: auto;
+    font-size: 70px;
+  }
+
+  .make {
+    margin: auto;
+    font-size: 100px;
+  }
+
+  .moon {
+    margin: auto;
+    padding-top: 20px;
+    font-size: 40px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px 20px 20px 80px;
+  }
+
+  #about {
+    text-align: center;
+    height: 100vh;
+  }
+
+
+  .team-member {
+    width: 300px;
+    margin: 30px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #ddd;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Add some hover effect on team member cards */
+  .team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px #ddd;
+    cursor: pointer;
+  }
+  
+  /* Style for the image container */
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+  }
+  
+  /* Style for the team member name */
+  .team-member h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  /* Style for the team member job title */
+  .team-member p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+
+  .aya {
+    position: relative;
+    left: 370px;
+  }
+  
+  #members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #contact {
+    height: 80vh;
+    text-align: center;
+  }
+
+  .contact {
+    margin: auto;
+  }
+
+  form {
+    padding: 20px;
+    color: white;
+  }
+
+  label, input[type="text"], input[type="email"], textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    width: 95%;
+    padding: 10px;
+    background-color: white;
+    color: #10101a;
+    border: none;
+    border-radius: 5px;
+  }
+
+  input[type="submit"] {
+    background-color: 	#4C4C66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
