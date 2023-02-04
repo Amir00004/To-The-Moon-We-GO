@@ -6,19 +6,16 @@ html {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 2px grey; 
   border-radius: 10px;
 }
- 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #0e0e10; 
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #0e0e10; 
 }
@@ -47,6 +44,12 @@ body {
     100% {
         background-position: 100% center;
     }
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: white;
   }
 
   header {
@@ -101,12 +104,9 @@ body {
     color: white;
     text-decoration: none;
   }
-  
-  main {
-    padding: 20px 20px 20px 80px;
-  }
 
   #about {
+    padding: 20px 20px 20px 80px;
     text-align: center;
     height: 100vh;
   }
@@ -126,29 +126,25 @@ body {
     transition: all 0.3s ease-in-out;
   }
   
-  /* Add some hover effect on team member cards */
   .team-member:hover {
     transform: scale(1.05);
     box-shadow: 2px 2px 15px #ddd;
     cursor: pointer;
   }
   
-  /* Style for the image container */
   .team-member img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin: 20px auto;
   }
-  
-  /* Style for the team member name */
+
   .team-member h3 {
     font-size: 22px;
     margin-top: 20px;
     color: white;
   }
   
-  /* Style for the team member job title */
   .team-member p {
     font-size: 18px;
     color: #777;
@@ -161,17 +157,71 @@ body {
   }
   
   #members{
+    padding: 20px 20px 20px 130px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 50px;
   }
 
   #services {
+    padding-top: 50px;
+    height: 150vh;
+    width: 100%;
+    text-align: center;
+    background-image:url(assets/milky-way-2695569__480.jpg);
+  }
+
+  #services p {
+    padding: 20px 20px 100px 80px;
+  }
+
+  .service-img {
+    height: 500px;
+    width: 500px;
+  }
+
+  .jobs {
+    position: relative;
+    width: 200px;
+    display: inline-block;
+    border: 5px solid blue;
+    border-radius: 10px;
+  }
+
+  .jobs:hover {
+    background-color: rgba(0, 153, 255, 0.616);
+    box-shadow: 2px 2px 2px rgba(0, 153, 255, 0.616);
+    cursor: pointer;
+  }
+
+  .dev {
+    top: 100px;
+    right: 200px;
+  }
+
+  .mark {
+    bottom: 100px;
+    right: 300px;
+  }
+
+  .ai {
+    bottom: 100px;
+    left: 300px;
+  }
+
+  .mob {
+    top: 100px;
+    left: 200px;
+  }
+
+  #reviews {
+    padding: 20px 20px 20px 80px;
     height: 100vh;
+    text-align: center;
   }
 
   .contact-button {
+    padding: 20px 20px 20px 80px;
     background-color: 	#4C4C66;
     color: white;
     padding: 10px 20px;
@@ -183,6 +233,7 @@ body {
   }
 
   .button {
+    padding: 20px 20px 20px 80px;
     text-align: center;
   }
   
