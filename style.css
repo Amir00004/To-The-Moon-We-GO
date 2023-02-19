@@ -3,7 +3,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
     height: 100vh;
     }
 
@@ -42,9 +42,11 @@ body{
 }
 
 header {
-    background-color: #10101a;
+    background-color: #060814;
     height: 100vh;
 }
+
+
 
 .container-fluid {
     padding: 2%;
@@ -146,75 +148,27 @@ button {
 
 #about {
     padding: 5% 15% 0% 15%;
+    color: #060814;
 }
+
+#about h2 {
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+#about h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 
 .skills {
-    padding: 4.5%;
-    padding-top: 20%;
+    margin: 4.8%;
 }
 
-.spinner {
-    width: 44px;
-    height: 44px;
-    animation: spinner-y0fdc1 2s infinite ease;
-    transform-style: preserve-3d;
-    position: relative;
-    bottom: 100px;
-    left: 130px;
-   }
-   
-   .spinner > div {
-    background-color: rgba(0,77,255,0.2);
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    border: 2px solid #004dff;
-   }
-   
-   .spinner div:nth-of-type(1) {
-    transform: translateZ(-22px) rotateY(180deg);
-   }
-   
-   .spinner div:nth-of-type(2) {
-    transform: rotateY(-270deg) translateX(50%);
-    transform-origin: top right;
-   }
-   
-   .spinner div:nth-of-type(3) {
-    transform: rotateY(270deg) translateX(-50%);
-    transform-origin: center left;
-   }
-   
-   .spinner div:nth-of-type(4) {
-    transform: rotateX(90deg) translateY(-50%);
-    transform-origin: top center;
-   }
-   
-   .spinner div:nth-of-type(5) {
-    transform: rotateX(-90deg) translateY(50%);
-    transform-origin: bottom center;
-   }
-   
-   .spinner div:nth-of-type(6) {
-    transform: translateZ(22px);
-   }
-   
-   @keyframes spinner-y0fdc1 {
-    0% {
-     transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
-    }
-   
-    50% {
-     transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
-    }
-   
-    100% {
-     transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
-    }
-    }
-
 #members {
-    background-color: #10101a;
+    background-color: #060814;
     padding: 5% 0%;
 }
 
@@ -230,3 +184,72 @@ button {
 .carousel-indicators {
     margin: 10% 0%;
 }
+
+.cta {
+    border: none;
+    background: none;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  
+  
+#our-services {
+    color: #060814;
+    padding: 5% 15% 0% 15%;
+  }
+  
+  #our-services h2 {
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  
+  .Service {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .Service i {
+    margin-bottom: 20px;
+  }
+  
+  .Service h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .Service p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
